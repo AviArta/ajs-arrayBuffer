@@ -1,21 +1,20 @@
-/* eslint-disable no-magic-numbers */
+/* eslint-disable no-undef */
+ 
 import Magician from "../models/Magican";
 import {jest} from '@jest/globals';
 
 jest.useFakeTimers();
 
 test("check create object Magician", () => {
-  const magican = new Magician("Mag", false, 1);
-  let expectedValue = {
-    changeAttack: 10,
-    defence: 40,
-    health: 100,
-    interval: 1,
-    level: 1,
-    name: "Mag",
-    stone: false,
-    type: "Magician",
-  };
+  const expectedValue = {changeAttack: 10,
+                    defence: 40,
+                    health: 100,
+                    interval: 1,
+                    level: 1,
+                    name: "Mag",
+                    stone: false,
+                    type: "Magician",
+  }, magican = new Magician("Mag", false, 1);
   expect(magican).toEqual(expectedValue);
 });
 

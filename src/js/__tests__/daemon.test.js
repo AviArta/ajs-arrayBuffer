@@ -1,4 +1,5 @@
-/* eslint-disable no-magic-numbers */
+/* eslint-disable no-undef */
+ 
 import Daemon from "../models/Daemon";
 import {jest} from '@jest/globals';
 

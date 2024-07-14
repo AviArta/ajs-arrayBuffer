@@ -1,11 +1,12 @@
+/* eslint-disable no-undef */
 import Character from "../models/Character";
 import {jest} from '@jest/globals';
 
 jest.useFakeTimers();
  
 test("check create object of class Character", () => {
-    const angel = new Character("Angel", "Magician"); 
-    let expectedValue = { changeAttack: NaN,
+    const angel = new Character("Angel", "Magician"), 
+     expectedValue = { changeAttack: NaN,
         defence: null,
         health: 100,
         level: 1,

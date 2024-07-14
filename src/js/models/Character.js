@@ -1,3 +1,4 @@
+/* eslint-disable max-statements */
 export default class Character {
     constructor(name, type) {
     if (name.length < 2 || name.length > 10) {
